@@ -1,8 +1,10 @@
 ﻿using ahorro123.DatabaseManager;
 using Ahorro123.DatabaseManager;
 using Ahorro123.Forms;
+using Ahorro123.Forms.Administracion;
 using Ahorro123.Forms.Personas;
 using Ahorro123.Forms.Reportes;
+using Ahorro123.Forms.Servicios;
 using Ahorro123.Forms.Tools;
 using System;
 using System.Collections;
@@ -50,12 +52,7 @@ namespace Ahorro123
         {
             Login login = new Login();
             login.MdiParent = this;
-            //login.Show();
-            
-            personasToolStripMenuItem.Enabled = true;
-            serviciosToolStripMenuItem.Enabled = true;
-            reportesToolStripMenuItem.Enabled = true;
-            administracionToolStripMenuItem1.Enabled = true;
+            login.Show();
         }
 
         public void Login(string username, ArrayList roles, ArrayList privi)
@@ -159,8 +156,9 @@ namespace Ahorro123
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SelectionForm sf = new SelectionForm("Empleados");
-            sf.ShowDialog();
+            Usuarios u = new Usuarios();
+            u.MdiParent = this;
+            u.Show();
         }
 
         private void cierreAnualToolStripMenuItem_Click(object sender, EventArgs e)
@@ -189,6 +187,72 @@ namespace Ahorro123
             Nuevas_Afiliaciones na = new Nuevas_Afiliaciones();
             na.MdiParent = this;
             na.Show();
+        }
+
+        private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Cuentas ct = new Cuentas();
+            ct.MdiParent = this;
+            ct.Show();
+        }
+
+        private void crearToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            NuevaCuenta nv = new NuevaCuenta("Crear");
+            nv.ShowDialog();
+        }
+
+        private void listarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Prestamos p = new Prestamos();
+            p.MdiParent = this;
+            p.Show();
+        }
+
+        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionesPrestamos gp = new GestionesPrestamos("Crear");
+            gp.ShowDialog();
+        }
+
+        private void listarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Pagos p = new Pagos();
+            p.MdiParent = this;
+            p.Show();
+        }
+
+        private void listarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Abonos a = new Abonos();
+            a.MdiParent = this;
+            a.Show();
+        }
+
+        private void crearToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            GestionesPagos gp = new GestionesPagos("Crear");
+            gp.ShowDialog();
+        }
+
+        private void crearToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            GestionesAbonos ga = new GestionesAbonos("Crear");
+            ga.ShowDialog();
+        }
+
+        private void rolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Roles r = new Roles();
+            r.MdiParent = this;
+            r.Show();
+        }
+
+        private void privilegiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Privilegios p = new Privilegios();
+            p.MdiParent = this;
+            p.Show();
         }
     }
 }

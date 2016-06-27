@@ -1,6 +1,6 @@
 ﻿namespace Ahorro123.Forms.Servicios
 {
-    partial class Cuentas
+    partial class Pagos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,29 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.view = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.view)).BeginInit();
+            this.view = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view)).BeginInit();
             this.SuspendLayout();
-            // 
-            // view
-            // 
-            this.view.AllowUserToAddRows = false;
-            this.view.AllowUserToDeleteRows = false;
-            this.view.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view.Dock = System.Windows.Forms.DockStyle.Top;
-            this.view.Location = new System.Drawing.Point(0, 0);
-            this.view.Name = "view";
-            this.view.ReadOnly = true;
-            this.view.Size = new System.Drawing.Size(619, 427);
-            this.view.TabIndex = 6;
-            this.view.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_CellContentClick);
-            this.view.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_CellDoubleClick);
             // 
             // groupBox1
             // 
@@ -60,10 +46,10 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btnLogin);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 433);
+            this.groupBox1.Location = new System.Drawing.Point(0, 413);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(619, 45);
-            this.groupBox1.TabIndex = 13;
+            this.groupBox1.Size = new System.Drawing.Size(516, 45);
+            this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
             // button3
@@ -72,7 +58,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(512, 16);
+            this.button3.Location = new System.Drawing.Point(414, 16);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 24);
             this.button3.TabIndex = 9;
@@ -121,29 +107,43 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Cuentas
+            // view
+            // 
+            this.view.AllowUserToAddRows = false;
+            this.view.AllowUserToDeleteRows = false;
+            this.view.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view.Dock = System.Windows.Forms.DockStyle.Top;
+            this.view.Location = new System.Drawing.Point(0, 0);
+            this.view.Name = "view";
+            this.view.ReadOnly = true;
+            this.view.Size = new System.Drawing.Size(516, 407);
+            this.view.TabIndex = 16;
+            this.view.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_CellContentClick);
+            this.view.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_CellContentDoubleClick);
+            // 
+            // Pagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 478);
+            this.ClientSize = new System.Drawing.Size(516, 458);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.view);
-            this.Name = "Cuentas";
-            this.Text = "Cuentas";
-            this.Load += new System.EventHandler(this.Cuentas_Load);
-            this.Resize += new System.EventHandler(this.Cuentas_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.view)).EndInit();
+            this.Name = "Pagos";
+            this.Text = "Pagos";
+            this.Load += new System.EventHandler(this.Pagos_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.view)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView view;
+
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.DataGridView view;
     }
 }

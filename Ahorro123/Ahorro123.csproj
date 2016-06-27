@@ -54,6 +54,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Administracion\GestionesUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administracion\GestionesUsuarios.Designer.cs">
+      <DependentUpon>GestionesUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Administracion\Privilegios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     </Compile>
     <Compile Include="Forms\Administracion\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administracion\UsuariosRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administracion\UsuariosRoles.Designer.cs">
+      <DependentUpon>UsuariosRoles.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Personas\Acciones.cs">
       <SubType>Form</SubType>
@@ -120,11 +132,47 @@
     <Compile Include="Forms\Reportes\Nuevas_Afiliaciones.Designer.cs">
       <DependentUpon>Nuevas_Afiliaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Servicios\Abonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicios\Abonos.Designer.cs">
+      <DependentUpon>Abonos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Servicios\Cuentas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Servicios\Cuentas.Designer.cs">
       <DependentUpon>Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Servicios\GestionesAbonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicios\GestionesAbonos.Designer.cs">
+      <DependentUpon>GestionesAbonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Servicios\GestionesPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicios\GestionesPagos.Designer.cs">
+      <DependentUpon>GestionesPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Servicios\GestionesPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicios\GestionesPrestamos.Designer.cs">
+      <DependentUpon>GestionesPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Servicios\NuevaCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicios\NuevaCuenta.Designer.cs">
+      <DependentUpon>NuevaCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Servicios\Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Servicios\Pagos.Designer.cs">
+      <DependentUpon>Pagos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Servicios\Prestamos.cs">
       <SubType>Form</SubType>
@@ -143,6 +191,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administracion\GestionesUsuarios.resx">
+      <DependentUpon>GestionesUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administracion\Privilegios.resx">
       <DependentUpon>Privilegios.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administracion\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administracion\UsuariosRoles.resx">
+      <DependentUpon>UsuariosRoles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -176,8 +230,26 @@
     <EmbeddedResource Include="Forms\Reportes\Nuevas_Afiliaciones.resx">
       <DependentUpon>Nuevas_Afiliaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicios\Abonos.resx">
+      <DependentUpon>Abonos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Servicios\Cuentas.resx">
       <DependentUpon>Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicios\GestionesAbonos.resx">
+      <DependentUpon>GestionesAbonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicios\GestionesPagos.resx">
+      <DependentUpon>GestionesPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicios\GestionesPrestamos.resx">
+      <DependentUpon>GestionesPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicios\NuevaCuenta.resx">
+      <DependentUpon>NuevaCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Servicios\Pagos.resx">
+      <DependentUpon>Pagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Servicios\Prestamos.resx">
       <DependentUpon>Prestamos.cs</DependentUpon>

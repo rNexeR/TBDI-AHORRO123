@@ -44,7 +44,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.Location = new System.Drawing.Point(0, 516);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(993, 68);
+            this.groupBox1.Size = new System.Drawing.Size(400, 68);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
@@ -85,7 +85,7 @@
             this.view.Location = new System.Drawing.Point(0, 0);
             this.view.Name = "view";
             this.view.ReadOnly = true;
-            this.view.Size = new System.Drawing.Size(993, 510);
+            this.view.Size = new System.Drawing.Size(400, 510);
             this.view.TabIndex = 10;
             this.view.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_CellDoubleClick);
             // 
@@ -93,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 584);
+            this.ClientSize = new System.Drawing.Size(400, 584);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.view);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

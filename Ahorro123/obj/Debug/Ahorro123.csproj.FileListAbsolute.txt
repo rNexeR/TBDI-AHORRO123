@@ -21,3 +21,11 @@ C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Deb
 C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Servicios.Prestamos.resources
 C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Tools.SelectionForm.resources
 C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Personas.Acciones.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Servicios.NuevaCuenta.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Servicios.GestionesPrestamos.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Servicios.Abonos.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Servicios.Pagos.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Servicios.GestionesAbonos.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Servicios.GestionesPagos.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Administracion.GestionesUsuarios.resources
+C:\Users\Nexer\documents\visual studio 2015\Projects\Ahorro123\Ahorro123\obj\Debug\Ahorro123.Forms.Administracion.UsuariosRoles.resources

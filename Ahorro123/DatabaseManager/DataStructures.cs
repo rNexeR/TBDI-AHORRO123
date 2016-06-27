@@ -15,9 +15,8 @@ namespace ahorro123.DatabaseManager
 
     public class Abono : Auditoria
     {
-        public int id_abono { get; set; }
         public int id_cuenta { get; set; }
-        public Decimal monto { get; set; }
+        public Double monto { get; set; }
         public DateTime fecha { get; set; }
         public string descripcion { get; set; }
     }
@@ -27,7 +26,7 @@ namespace ahorro123.DatabaseManager
         public int id_uenta { get; set; }
         public int id_empleado { get; set; }
         public DateTime fecha_apertura { get; set; }
-        public Decimal saldo { get; set; }
+        public Double saldo { get; set; }
         public string tipo { get; set; }
     }
 
@@ -71,16 +70,17 @@ namespace ahorro123.DatabaseManager
         public int id_pago { get; set; }
         public int id_prestamo { get; set; }
         public DateTime fecha { get; set; }
-        public Decimal monto { get; set; }
+        public Double monto { get; set; }
     }
 
     public class Prestamo : Auditoria
     {
         public int id_prestamo { get; set; }
         public DateTime fecha { get; set; }
-        public Decimal monto { get; set; }
+        public Double monto { get; set; }
         public int periodos { get; set; }
-        public Decimal saldo { get; set; }
+        public Double saldo { get; set; }
+        public Double tasa { get; set; }
     }
 
     public class Privilegio : Auditoria
@@ -105,5 +105,19 @@ namespace ahorro123.DatabaseManager
     {
         public int id_persona_externa { get; set; }
         public int num_telefono { get; set; }
+    }
+
+    public class relationEP : Auditoria
+    {
+        public int id_empleado { get; set; }
+        public int id_prestamo { get; set; }
+    }
+
+    public class relationPEP : Auditoria
+    {
+        public int id_aval { get; set; }
+        public int id_prestamo { get; set; }
+        public int id_personae { get; set; }
+        public string parentesco { get; set; }
     }
 }

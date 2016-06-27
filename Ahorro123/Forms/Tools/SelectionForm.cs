@@ -25,24 +25,36 @@ namespace Ahorro123.Forms.Tools
 
         private void SelectionForm_Load(object sender, EventArgs e)
         {
-            if (tipo.Equals("Personas_Externas"))
-                view.DataSource = dbm.getEmleados(false);
-            if (tipo.Equals("Empleados"))
-                view.DataSource = dbm.getPersonasE(false);
-            while (view.Columns.Count > 5)
-            {
-                view.Columns.RemoveAt(view.Columns.Count-1);
-            }
-            view.AutoResizeColumns();
-            int w = 0;
-            for(int i = 0; i < 5; i++)
-                w += view.Columns[i].Width + 16;
-            this.Width = w;
             view.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             view.MultiSelect = false;
 
             int alto = this.Size.Height;
             view.Height = alto - groupBox1.Size.Height - 30;
+            int filas = 5;
+            if (tipo.Equals("Empleados"))
+                view.DataSource = dbm.getEmleados(false);
+            else if (tipo.Equals("Personas_Externas"))
+                view.DataSource = dbm.getPersonasE(false);
+            else if (tipo.Equals("Prestamos"))
+            {
+                view.DataSource = dbm.getFullPrestamos(false);
+                filas = 9;
+            }
+            else if (tipo.Equals("Cuentas"))
+                view.DataSource = dbm.getCuentas(false);
+            else
+                view.DataSource = dbm.getRoles(false);
+            return;
+            while (view.Columns.Count > filas)
+            {
+                view.Columns.RemoveAt(view.Columns.Count-1);
+            }
+            view.AutoResizeColumns();
+            int w = 0;
+            for(int i = 0; i < view.Columns.Count; i++)
+                w += view.Columns[i].Width + 16;
+            this.Width = w;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
